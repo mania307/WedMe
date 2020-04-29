@@ -1,0 +1,482 @@
+:root {
+    font-size: 10px;
+}
+
+@media (max-width: 1024px) {
+
+    /* NAWIGACJA */
+    ul {
+        flex-basis: 85%;
+    }
+
+    li:nth-of-type(1) {
+        margin-right: 20px;
+    }
+
+    .quotation {
+        top: 70%;
+        width: 60%;
+    }
+
+    /* OFERTA */
+
+    div.wrap {
+        width: 90%;
+    }
+
+    div.oferta {
+        margin: 0 20px;
+    }
+
+    div.oferta h2 {
+        top: 60%;
+        transform: translateY(-50%);
+        font-size: 2.5rem;
+    }
+
+    /* ZAPROSZENIE */
+    div.card {
+        width: 80%;
+    }
+
+    input.names {
+        margin: 30px auto 60px auto;
+        width: 70%;
+        height: 40px;
+        font-family: 'Quicksand', sans-serif;
+        text-align: center;
+    }
+
+    div.cardAndName {
+        width: 100%;
+        height: 33%;
+    }
+
+    /* KONTAKT */
+    div.ig-photo div {
+        height: 100px;
+        width: 100px;
+    }
+
+    div.ig-photo>div>img {
+        max-height: 100px;
+    }
+
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+
+    /* HEADER */
+    .quotation {
+        width: 60%;
+
+    }
+
+    p.quote {
+        font-size: 3rem;
+    }
+
+    div.arrow {
+        bottom: 10px;
+    }
+
+    /* OFERTA */
+
+    section.offer h3 {
+        top: 0;
+        margin: 7% 0;
+    }
+
+    div.oferta {
+        height: 90%;
+        margin: 0 10px;
+    }
+
+    div.wrap {
+        padding: 0;
+    }
+
+    /* ZAPROSZENIE */
+
+    div.card h3 {
+        padding: 0;
+    }
+}
+
+@media (max-width: 800px) and (orientation: portrait) {
+
+    /* HEADER */
+    .header {
+        background-position-x: 70%;
+    }
+
+    aside {
+        display: block;
+        position: fixed;
+        top: 10px;
+        left: 15px;
+        font-size: 4rem;
+        line-height: 50px;
+        transition: .3s linear;
+        color: black;
+        z-index: 3;
+    }
+
+    i.fas {
+        display: none;
+    }
+
+    i.show {
+        display: block;
+    }
+
+    nav {
+        display: block;
+        position: fixed;
+        top: -70vh;
+        right: 0;
+        width: 80vw;
+        height: 70vh;
+        background-color: black;
+        transition: .3s linear;
+    }
+
+    nav.mobile {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 80vw;
+        height: 70vh;
+        background-color: black;
+        transition: .3s linear;
+    }
+
+    nav.active {
+        background-color: black;
+        box-shadow: none;
+    }
+
+    nav.active a {
+        text-shadow: none;
+        color: white;
+    }
+
+    nav.active a:hover {
+        color: rgb(95, 95, 95);
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        height: 100%;
+        width: 100%;
+        flex: 0;
+    }
+
+    nav ul li a.main,
+    nav ul li a.offer,
+    nav ul li a.about,
+    nav ul li a.contact {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 6%;
+        font-size: 3rem;
+    }
+
+    li:nth-of-type(1) {
+        margin: 0;
+    }
+
+    li:nth-of-type(1) a.main {
+        font-size: 5rem;
+    }
+
+
+    .quotation {
+        top: 80%;
+        width: 80%;
+    }
+
+    div.arrow {
+        bottom: 15px;
+    }
+
+
+    /* OFERTA */
+
+
+    section.offer h3 {
+        top: 0;
+        margin: 60px 0;
+    }
+
+    div.wrap {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0 0 60px 0;
+    }
+
+    div.oferta {
+        width: 100%;
+        margin: 0 0 5% 0;
+    }
+
+    a.oferta {
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+
+    a.oferta h2 {
+        top: 45%;
+        left: 0px;
+    }
+
+    p.txt-offer {
+        display: none;
+    }
+
+
+    /* O NAS */
+
+    .about-photo-text p {
+        font-size: 2.6rem;
+    }
+
+
+    /* KONTAKT */
+    div.contact-data,
+    div.socials {
+        margin: 5px;
+        width: 45%;
+    }
+
+
+    div.ig-photo div {
+        height: 75px;
+        width: 75px;
+        margin: 5px;
+        overflow: hidden;
+    }
+
+
+    div.ig-photo>div>img {
+        max-height: 75px;
+    }
+
+    .socials img {
+        transform: scale(1.2);
+    }
+
+
+
+
+    /* ZAPROSZENIE */
+
+    div.card {
+        height: 70vh;
+
+    }
+
+    div.card p {
+        font-size: 1.8rem;
+    }
+
+    div.customizeText {
+        padding: 0;
+    }
+
+
+    div.cardAndName {
+        margin-top: 10%;
+        height: 50%;
+    }
+
+    div.cardAndName img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .socials img {
+        filter: none;
+    }
+}
+
+@media (max-width: 600px) and (orientation: portrait) {
+    /* HEADER */
+
+    .header {
+        background-position-x: 75%;
+    }
+
+    nav ul li a.main,
+    nav ul li a.offer,
+    nav ul li a.about,
+    nav ul li a.contact {
+        font-size: 2rem;
+    }
+
+    .quotation {
+        top: 70%;
+        width: 90%;
+    }
+
+    p.quote {
+        font-size: 3rem;
+    }
+
+    /* O NAS */
+    .about-photo-text p {
+        font-size: 2.1rem;
+    }
+
+    /* ZAPROSZENIE */
+
+    div.card {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    div.card h3 {
+        margin-bottom: 10%;
+        padding: 0;
+    }
+
+    input.names {
+        display: block;
+        margin: 30px auto 30px auto;
+    }
+
+    div.customizeText {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    div.customizeText button {
+        padding: 5px;
+        margin: 10px
+    }
+
+    div.chooseFontFamily {
+        width: 50%;
+        transform: translateX(40%);
+        margin-top: 20px;
+    }
+
+    div.chooseFontFamily span {
+        font-size: 1.6rem;
+    }
+
+    div.cardAndName {
+        height: 29%;
+    }
+
+    div.cardAndName img {
+        height: auto;
+    }
+
+    div.card p {
+        font-size: 1.6rem;
+    }
+
+    p.showNames {
+        top: 10%;
+        left: 0;
+        transform: translate(0, 0);
+        max-width: 100%;
+    }
+
+    /* KONTAKT */
+    div.contact-info {
+        flex-direction: column;
+    }
+
+    div.contact-data,
+    div.socials {
+        width: 100%;
+        margin: 0;
+    }
+
+    div.socials p,
+    div.contact h3 {
+        margin: 5% 0;
+        padding: 0;
+    }
+
+    div.ig-photo {
+        margin: 5% 0;
+    }
+
+
+}
+
+@media (max-width: 386px) and (orientation: portrait) {
+
+    /* HEADER */
+    .quotation {
+        width: 100%;
+    }
+
+    /* O NAS */
+    .about-photo-text p {
+        font-size: 2rem;
+        width: 90%;
+    }
+
+    /* ZAPROSZENIE */
+    div.card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 340px) and (orientation: portrait) {
+
+    /* ZAPROSZENIE */
+    div.card {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 320px) and (orientation: portrait) {
+    /* HEADER */
+
+    p.quote {
+        font-size: 2rem;
+    }
+
+    p.quoteAuthor {
+        font-size: 1.5rem;
+    }
+
+    /* OFERTA */
+    div.wrap {
+        margin: 0;
+    }
+
+    /* O NAS */
+    .about-photo-text p {
+        font-size: 1.7rem;
+    }
+
+    /* ZAPROSZENIE */
+
+    section.card {
+        display: none;
+    }
+
+    /* KONTAKT */
+
+    div.socials {
+        background-color: #fff;
+    }
+}

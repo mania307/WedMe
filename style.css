@@ -1,0 +1,546 @@
+/* 
+font-family: 'Quicksand', sans-serif;
+font-family: 'Marck Script', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Alex Brush', cursive;
+font-family: 'Allura', cursive;
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 10px;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+}
+
+aside {
+    display: none;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 60px;
+    width: 100%;
+    justify-content: center;
+    z-index: 2;
+    transition: linear .7s;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+}
+
+nav.active {
+    height: 50px;
+    background-color: #fff;
+    box-shadow: -20px 4px 9px lightgrey;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    flex-basis: 70%;
+}
+
+li {
+    text-align: center;
+    flex: 1;
+}
+
+li:nth-of-type(1) {
+    margin-right: 100px;
+}
+
+a {
+    padding: 15px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 2rem;
+    text-shadow: 1px 1px 10px black;
+    transition: linear .7s;
+}
+
+a.main,
+span.main {
+    font-family: 'Alex Brush', cursive;
+    text-transform: none;
+    font-size: 5rem;
+    font-weight: normal;
+}
+
+
+nav.active a {
+    text-shadow: none;
+    color: black;
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/header1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: opacity(0.95);
+}
+
+.quotation {
+    background-color: rgba(245, 245, 245, 0.3);
+    position: absolute;
+    text-align: center;
+    top: 65%;
+    left: 0;
+    transform: translate(0, -50%);
+    width: 37%;
+    padding: 20px;
+}
+
+p.quote,
+p.quoteAuthor {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    /* color: whitesmoke; */
+    font-size: 4rem;
+    font-family: 'Marck Script', cursive;
+    mix-blend-mode: luminosity;
+}
+
+p.quoteAuthor {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2rem;
+}
+
+div.arrow {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    font-size: 4rem;
+    transform: translate(-50%, 0);
+    transition: 0.8s;
+}
+
+.arrow img {
+    transition: .6s;
+}
+
+.arrow img:hover {
+    box-shadow: 0.3vmin -0.3vmin 0 white;
+}
+
+
+
+/* OFERTA */
+
+
+section.offer {
+    flex-direction: column;
+    /* height: 100vh; */
+    align-items: center;
+    overflow: hidden;
+}
+
+div.about-photo-text h3 {
+    color: rgb(175, 168, 147);
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+/* div.offer-button button  */
+/* button {
+    margin: 30px 0;
+    padding: 10px;
+    background: linear-gradient(135deg, rgb(151, 144, 141) 0%, rgb(147, 139, 132) 0%, rgb(168, 164, 154) 0%, rgb(216, 214, 212) 100%);
+    border: 1px solid white;
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+    transition: linear .3s;
+    text-transform: uppercase;
+} */
+
+/* button:hover {
+    color: whitesmoke;
+    background: linear-gradient(135deg, rgb(80, 79, 78) 0%, rgb(88, 88, 87) 0%, rgb(211, 209, 206) 0%, rgb(97, 91, 85) 100%);
+    border: 1px solid white;
+} */
+
+
+
+
+
+/* VERSION 2 */
+
+
+div.wrap {
+    display: flex;
+    height: 95vh;
+    width: 65%;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+section.offer h3 {
+    position: relative;
+    top: 100px;
+    left: 0;
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 2px;
+}
+
+div.oferta {
+    height: 70%;
+    width: 30%;
+    margin: 0 40px;
+    text-align: center;
+    border: 1px solid rgb(223, 221, 221);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+a.oferta {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    text-shadow: none;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: 0.8s;
+    overflow: hidden;
+}
+
+a.oferta:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+a.oferta p {
+    position: relative;
+    top: 40%;
+    left: 0;
+    transform: scale(0);
+    transition: 0.6s;
+    overflow: hidden;
+}
+
+a.oferta:hover p {
+    transform: scale(1);
+}
+
+div.oferta h2 {
+    position: relative;
+    top: 75%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+}
+
+div.oferta-1 {
+    background-image: url(img/narz-1.jpg);
+}
+
+div.oferta-2 {
+    background-image: url(img/slub-1.jpg);
+}
+
+div.oferta-3 {
+    background-image: url(img/rocz-1.jpg);
+}
+
+
+
+
+
+
+/* O NAS */
+
+
+section.about {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Quicksand', sans-serif;
+}
+
+div.about-us,
+div.contact {
+    width: 100%;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-photo-text {
+    /* background-image: url("img/aparat.jpg"); */
+    /* background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.4); */
+    background-color: lightgray;
+    background-blend-mode: screen;
+    /* background-position: 0 center;
+    background-size: cover; */
+}
+
+
+div.about-photo-text h3,
+div.contact-info h3,
+div.card h3 {
+    color: black;
+    font-size: 3rem;
+    padding-top: 40px;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.about-photo-text p {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    width: 75%;
+    margin: 40px auto 0 auto;
+    padding-bottom: 40px;
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    line-height: 200%;
+    mix-blend-mode: hard-light;
+    color: white;
+}
+
+
+
+
+
+/* ZAPROSZENIE */
+section.card {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+div.card {
+    width: 50%;
+    text-align: center;
+    height: 100%;
+}
+
+div.card h3 {
+    margin-bottom: 60px;
+}
+
+div.card p {
+    font-size: 1.6rem;
+}
+
+input.names {
+    display: block;
+    margin: 30px auto 60px auto;
+    width: 50%;
+    height: 30px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+div.customizeText {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 60px 60px 60px;
+}
+
+div.customizeText button {
+    height: 40px;
+    padding: 10px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fff;
+    border: 1px solid rgb(112, 112, 112);
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: linear .3s;
+    text-transform: uppercase;
+}
+
+div.customizeText button:hover {
+    color: whitesmoke;
+    background: black;
+    border: 1px solid white;
+}
+
+div.chooseFontFamily {
+    text-align: left;
+    width: 20%;
+}
+
+div.chooseFontFamily span {
+    font-size: 1.4rem;
+    margin: 2%;
+}
+
+div.cardAndName {
+    position: relative;
+    overflow: hidden;
+}
+
+p.showNames {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Quicksand', serif;
+    text-transform: none;
+    width: 600px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* div.cardAndName img {
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    max-height: 400px;
+} */
+
+
+
+/* KONTAKT */
+
+div.contact {
+    background-color: lightgray;
+
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    flex-grow: 1;
+}
+
+div.contact-data,
+div.socials {
+    width: 50%;
+    height: 100%;
+}
+
+
+div.ig-photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 60px;
+
+}
+
+div.ig-photo div {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+div.contact h3 {
+    margin: 0 0 50px 0;
+    padding: 50px 0 0 0;
+    margin-bottom: 80px;
+    font-weight: normal;
+}
+
+.contact-options {
+    text-align: center;
+}
+
+/* .sm-logo img {
+    margin: 20px;
+    filter: saturate(0);
+} */
+
+.contact-img:hover img {
+    filter: saturate(1);
+}
+
+div.ig-photo>div>img {
+    position: relative;
+    top: 0;
+    left: -25%;
+    max-height: 150px;
+    margin: 0;
+    filter: saturate(1);
+
+}
+
+.contact-img {
+    margin-left: 20px;
+}
+
+.contact-img span {
+    font-size: 1.8em;
+    vertical-align: 30px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+div.socials {
+    text-align: center;
+}
+
+div.socials p {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    padding-top: 40px;
+}
+
+.socials img {
+    margin: 20px;
+    filter: saturate(0);
+}
+
+.socials img:hover {
+    filter: saturate(1);
+    cursor: pointer;
+}
+
+
+footer a,
+footer p {
+    padding: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+    line-height: 50px;
+    mix-blend-mode: soft-light;
+    color: rgb(255, 255, 255);
+}
