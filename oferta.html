@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta WedMe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fotografia ślubna | Sesje ślubne | Sesje narzeczeńskie | Sesje na rocznice">
+    <meta name="keywords" content="fotografia, ślub, ślubna, zdjęcia, sesje, zdjęciowe, zdjęciowa, ślubne">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-mobile.css">
+    <link rel="stylesheet" href="style-slider.css">
+</head>
+
+<body>
+    <section class="head" id="head">
+        <aside class="head_aside"><i class="fas fa-bars show"></i><i class="fas fa-times"></i></aside>
+        <nav class="head_nav">
+            <ul>
+                <li><a href="index.html" class="main">WedMe</a></li>
+                <li><a href="index.html" class="offer">Oferta</a></li>
+                <li><a href="index.html" class="about">Dlaczego my?</a></li>
+                <li><a href="#" class="contact">Kontakt</a></li>
+            </ul>
+        </nav>
+
+    </section>
+
+    <section class="slider">
+        <h2>Galeria</h2>
+        <div class="slider_container">
+
+            <button class="slider_button slider_button--prev" data-button-prev></button>
+            <figure class="slide" data-slide></figure>
+            <button class="slider_button slider_button--next" data-button-next></button>
+        </div>
+
+    </section>
+    <section class="contact">
+        <div class="contact" id="contact">
+            <div class="contact-info">
+                <div class="socials">
+                    <p>Śledź <span class="main">WedMe</span> w socialach!</p>
+                    <div class="ig-photo">
+                        <div><img src="img/ig-mini.jpg" alt=""></div>
+                        <div><img src="img/narz-mini.jpg" alt=""></div>
+                        <!-- <div><img src="img/balon-mini.jpg" alt=""></div> -->
+                        <div><img src="img/ig2-mini.jpg" alt=""></div>
+                        <div><img src="img/ig3-mini.jpg" alt=""></div>
+                    </div>
+                    <img src="img/facebook.png" alt="Facebook logo" class="sm-logo">
+                    <img src="img/instagram.png" alt="Instagram logo" class="sm-logo">
+                    <img src="img/youtube.png" alt="Youtube logo" class="sm-logo">
+                </div>
+                <div class="contact-data">
+                    <h3>Skontaktuj się z nami</h3>
+                    <div class="contact-options">
+                        <div class="contact-img mail">
+                            <!-- <img src="img/mail-min.png" alt="Mail"> -->
+                            <span>
+                                <label>office@wedme.pl</label></span>
+                        </div>
+                        <div class="contact-img phone">
+                            <!-- <img src="img/sms-min.png" alt="Phone number"> -->
+                            <span> <label>+48
+                                    987 654
+                                    321</label></span></div>
+                        <div class="contact-img address">
+                            <!-- <img src="img/pin-min.png" alt="Address"> -->
+                            <span><label> ul.
+                                    Ślubna 1,
+                                    00-000
+                                    Warszawa</label></span>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <footer>
+                <p>2020 by <a href="mailto:maria.wojtecka@gmail.com">maria.wojtecka</a></p>
+            </footer>
+        </div>
+
+    </section>
+    <script src="slider.js"></script>
+    <script>
+        const imageArr = [
+            './img/1.jpg',
+            './img/2.jpg',
+            './img/3.jpg',
+            './img/4.jpg',
+            './img/5.jpg'
+        ]
+
+        const slider = new Slider(imageArr);
+        slider.initializerSlider();
+    </script>
+</body>
+
+</html>
