@@ -5,8 +5,8 @@ $('nav ul li a').on('click', function () {
     })
 })
 
-$('div.arrow').on('click', function () {
-    const goToSection = "#offer";
+$('a.head_cta--a').on('click', function () {
+    const goToSection = "#card";
     $('body, html').animate({
         scrollTop: $(goToSection).offset().top
     })

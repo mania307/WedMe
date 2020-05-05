@@ -4,20 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fotografia ślubna | Sesje ślubne | Sesje narzeczeńskie | Sesje na rocznice">
+    <meta name="keywords" content="fotografia, ślub, ślubna, zdjęcia, sesje, zdjęciowe, zdjęciowa, ślubne">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
-    <title>WedMe ♥ Najpiękniejsze chwile</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-mobile.css">
+    <title>WedMe ♥ Najpiękniejsze chwile uchwycone na zdjęciach</title>
 </head>
 
 <body>
     <section class="head" id="head">
-        <aside><i class="fas fa-bars show"></i><i class="fas fa-times"></i></aside>
-        <nav>
+        <aside class="head_aside"><i class="fas fa-bars show"></i><i class="fas fa-times"></i></aside>
+        <nav class="head_nav">
             <ul>
                 <li><a href="#" class="main">WedMe</a></li>
                 <li><a href="#" class="offer">Oferta</a></li>
@@ -25,14 +31,13 @@
                 <li><a href="#" class="contact">Kontakt</a></li>
             </ul>
         </nav>
-        <header class="header" id="main">
-            <div class="quotation">
+        <header class="head_header" id="main">
+            <div class="head_header quotation">
                 <p class="quote">Miej oczy szeroko otwarte przed ślubem,
                     i przymykaj je później.</p>
                 <p class="quoteAuthor">Khalil Gibron</p>
             </div>
-            <div class="arrow"><a href="#offer"><img
-                        src="https://img.icons8.com/carbon-copy/50/000000/down--v1.png" /></a>
+            <div class="cta"><a href="#card" class="head_cta--a"><span>Kreator zaproszeń</span></a>
             </div>
         </header>
     </section>
@@ -41,21 +46,21 @@
 
     <section class="offer" id="offer">
         <h3>Oferujemy</h3>
-        <div class="wrap">
-            <div class="oferta oferta-1">
-                <a href="#offer" class="oferta">
+        <div class="offer_wrap">
+            <div class="offer_wrap_offer offer-1">
+                <a href="oferta.html" class="a-offer">
                     <p class="txt-offer">Wolne terminy w 2020!</p>
                     <h2>Sesje narzeczeńskie</h2>
                 </a>
             </div>
-            <div class="oferta oferta-2">
-                <a href="#offer" class="oferta">
+            <div class="offer_wrap_offer offer-2">
+                <a href="oferta.html" class="a-offer">
                     <p class="txt-offer">Już od 500zł!</p>
                     <h2>Sesje ślubne</h2>
                 </a>
             </div>
-            <div class="oferta oferta-3">
-                <a href="#offer" class="oferta">
+            <div class="offer_wrap_offer offer-3">
+                <a href="oferta.html" class="a-offer">
                     <p class="txt-offer">Umów się!</p>
                     <h2>Sesje rocznicowe</h2>
                 </a>
@@ -69,26 +74,26 @@
 
 
     <section class="about">
-        <div class="about-us" id="about">
-            <div class="about-photo-text">
+        <div class="about_us" id="about">
+            <div class="about_us--text">
                 <h3><span class="main">WedMe</span></h3>
-                <p>Fotografią ślubną zajmujemy się od 2001r. <br> Zrealizowaliśmy już 570 ślubów, 1050 sesji
-                    narzeczeńskich i rocznicowych!
-                    Zaufało nam 1630 par! <br>
-                    Realizowaliśmy sesje w: Polsce, Czechach, Francji, Włoszech, Hiszpani, Islandii, Potrugalii, Maroku,
-                    Bahamach,
-                    Wyspach Kanaryjskich, Zjednoczonych Emiratach Abarskich oraz RPA! <br>
-                    Zapewniamy wspaniałą atmosferę podczas sesji, a także dużo śmiechu i piękne, profesjonalne zdjęcia.
-                    <br>
-
-                    Zapraszamy do zapoznania się z ofertą oraz do kontaktu.
+                <p class="description"><span class="left"> Fotografią ślubną zajmujemy się od 2001r. <br>
+                        Zrealizowaliśmy już 570 ślubów, 1050 sesji narzeczeńskich i rocznicowych! Zaufało nam 1630 par!
+                    </span>
+                    <span class="right">Realizowaliśmy sesje w: Polsce, Czechach, Francji, Włoszech, Hiszpani, Islandii,
+                        Potrugalii, Maroku,
+                        Bahamach,
+                        Wyspach Kanaryjskich, Zjednoczonych Emiratach Abarskich oraz RPA!</span>
+                    <p>
+                        Zapewniamy wspaniałą atmosferę podczas sesji, a także dużo śmiechu i piękne, profesjonalne
+                        zdjęcia. <br> Zapraszamy do zapoznania się z ofertą oraz do kontaktu.</p>
                 </p>
             </div>
         </div>
 
     </section>
 
-    <section class="card">
+    <section class="card" id="card">
         <div class="card">
             <h3>Zaprojektuj swoje zaproszenie</h3>
             <p>Możemy dla Państwa również wydrukować zaproszenia. <br>Poniżej znajduje się generator umożliwiający

@@ -20,15 +20,15 @@
 
     /* OFERTA */
 
-    div.wrap {
+    div.offer_wrap {
         width: 90%;
     }
 
-    div.oferta {
+    div.offer_wrap_offer {
         margin: 0 20px;
     }
 
-    div.oferta h2 {
+    div.offer_wrap_offer h2 {
         top: 60%;
         transform: translateY(-50%);
         font-size: 2.5rem;
@@ -64,7 +64,7 @@
 
 }
 
-@media (max-width: 900px) and (orientation: landscape) {
+@media (max-width: 900px) {
 
     /* HEADER */
     .quotation {
@@ -76,9 +76,6 @@
         font-size: 3rem;
     }
 
-    div.arrow {
-        bottom: 10px;
-    }
 
     /* OFERTA */
 
@@ -87,12 +84,12 @@
         margin: 7% 0;
     }
 
-    div.oferta {
+    div.offer_wrap_offer {
         height: 90%;
         margin: 0 10px;
     }
 
-    div.wrap {
+    div.offer_wrap {
         padding: 0;
     }
 
@@ -103,14 +100,14 @@
     }
 }
 
-@media (max-width: 800px) and (orientation: portrait) {
+@media (max-width: 800px) {
 
     /* HEADER */
-    .header {
-        background-position-x: 70%;
+    div.head_header {
+        background-position: right;
     }
 
-    aside {
+    aside.head_aside {
         display: block;
         position: fixed;
         top: 10px;
@@ -130,7 +127,7 @@
         display: block;
     }
 
-    nav {
+    nav.head_nav {
         display: block;
         position: fixed;
         top: -70vh;
@@ -205,9 +202,6 @@
         width: 80%;
     }
 
-    div.arrow {
-        bottom: 15px;
-    }
 
 
     /* OFERTA */
@@ -218,23 +212,23 @@
         margin: 60px 0;
     }
 
-    div.wrap {
+    div.offer_wrap {
         flex-direction: column;
         width: 100%;
         padding: 0;
         margin: 0 0 60px 0;
     }
 
-    div.oferta {
+    div.offer_wrap_offer {
         width: 100%;
         margin: 0 0 5% 0;
     }
 
-    a.oferta {
+    a.a-offer {
         background-color: rgba(255, 255, 255, 0.6);
     }
 
-    a.oferta h2 {
+    a.a-offer h2 {
         top: 45%;
         left: 0px;
     }
@@ -246,10 +240,13 @@
 
     /* O NAS */
 
-    .about-photo-text p {
+    .about_us--text p {
         font-size: 2.6rem;
     }
 
+    p.description {
+        display: block;
+    }
 
     /* KONTAKT */
     div.contact-data,
@@ -276,12 +273,11 @@
     }
 
 
-
-
     /* ZAPROSZENIE */
 
     div.card {
         height: 70vh;
+        margin-bottom: 0;
 
     }
 
@@ -305,6 +301,12 @@
         left: 0;
     }
 
+    p.showNames {
+        top: 30%
+    }
+
+
+
     .socials img {
         filter: none;
     }
@@ -313,7 +315,7 @@
 @media (max-width: 600px) and (orientation: portrait) {
     /* HEADER */
 
-    .header {
+    .head_header {
         background-position-x: 75%;
     }
 
@@ -334,7 +336,7 @@
     }
 
     /* O NAS */
-    .about-photo-text p {
+    .about_us--text p {
         font-size: 2.1rem;
     }
 
@@ -344,6 +346,7 @@
         position: relative;
         top: 0;
         left: 0;
+        height: 100vh;
     }
 
     div.card h3 {
@@ -389,10 +392,14 @@
     }
 
     p.showNames {
-        top: 10%;
+        top: 50%;
         left: 0;
         transform: translate(0, 0);
         max-width: 100%;
+    }
+
+    div.cardAndName img {
+        max-width: 90vw;
     }
 
     /* KONTAKT */
@@ -419,15 +426,36 @@
 
 }
 
+@media (max-width: 500px) and (orientation: portrait) {
+
+    /* HEADER */
+    header.head_header {
+        background-position: 80%;
+    }
+
+    div.quotation {
+        width: 100%;
+    }
+
+    div.card {
+        margin-bottom: 0;
+    }
+}
+
+
 @media (max-width: 386px) and (orientation: portrait) {
 
     /* HEADER */
-    .quotation {
+    header.head_header {
+        background-position: 80%;
+    }
+
+    div.quotation {
         width: 100%;
     }
 
     /* O NAS */
-    .about-photo-text p {
+    .about_us--text p {
         font-size: 2rem;
         width: 90%;
     }
@@ -439,16 +467,12 @@
 }
 
 @media (max-width: 340px) and (orientation: portrait) {
+    /* HEADER */
 
-    /* ZAPROSZENIE */
-    div.card {
+    div.quotation {
+        top: 85%;
         width: 100%;
     }
-}
-
-
-@media (max-width: 320px) and (orientation: portrait) {
-    /* HEADER */
 
     p.quote {
         font-size: 2rem;
@@ -458,13 +482,18 @@
         font-size: 1.5rem;
     }
 
+    div.cta {
+        display: none;
+    }
+
+
     /* OFERTA */
-    div.wrap {
+    div.offer_wrap {
         margin: 0;
     }
 
     /* O NAS */
-    .about-photo-text p {
+    .about_us--text p {
         font-size: 1.7rem;
     }
 
